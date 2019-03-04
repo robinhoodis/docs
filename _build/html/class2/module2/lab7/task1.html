@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PPZPQ6');</script>
+  <!-- End Google Tag Manager -->
+    <title>Create an iRule</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="kb_doc_type" content="Manual"/>
+  <meta name="kb_doc_type" content="User Guide"/>
+  <meta name="title" content="Create an iRule"/>
+  <meta name="product" content="Reference Architecture"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+
+  
+
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Create an iRule &#8212; Reference Architecture  documentation</title>
+    <link rel="stylesheet" href="../../../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/f5_agility_theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/f5.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/f5-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/21fb8a09c3.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="iRule assignment" href="task2.html" />
+    <link rel="prev" title="URL Categorization" href="lab7.html" />
+
+  
+    
+
+  
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden">
+        <i class="fa fa-align-justify"></i>
+      </button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      
+      <nav class="nav-sidebartoc">
+        <h5>Reference Architecture  documentation </h5>
+<div id="searchbox" role="search">
+  <form class="search" action="../../../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <h5>Current Page</h5>
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">Create an iRule</a></li>
+</ul>
+
+         </span>
+        <hr>
+        <h5>Site Contents</h5>
+        <span class="nav-sidebartoc">
+            <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../class2.html">DNS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../module1/module1.html">Availability</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../module2.html">Security</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../lab1/lab1.html">Transparent Cache</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lab2/lab2.html">Listeners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lab3/lab3.html">Hidden Master</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lab4/lab4.html">DNSSec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lab5/lab5.html">Validating Resolver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lab6/lab6.html">RPZ</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="lab7.html">URL Categorization</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Create an iRule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task2.html">iRule assignment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="task3.html">Results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lab8/lab8.html">Title</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+  
+  <div class="main active" id="content">
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">F5 Cloud Docs</a> &gt; <a href="../../../index.html">Reference Architecture </a> &gt; Create an iRule</li>
+          </ul>
+      </nav>
+      
+      
+
+    
+  <div class="section" id="create-an-irule">
+<h1>Create an iRule<a class="headerlink" href="#create-an-irule" title="Permalink to this headline">¶</a></h1>
+<p>Navigate to: <strong>DNS  ››  Delivery : iRules : iRules List</strong></p>
+<img alt="../../../_images/irule-new.png" src="../../../_images/irule-new.png" />
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/rule/list.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/rule/list.jsp</a></p>
+<p>Create new iRule, copy the content below and paste it.</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Name</td>
+<td>DNS-query-filtering</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="nv">when</span> RULE_INIT <span class="k">{</span>
+  <span class="c"># Set categories to block for DNS hosts</span>
+  <span class="k">set</span> static::blocked_categories <span class="k">{</span>
+    <span class="o">/</span><span class="nv">Common</span><span class="o">/</span>Bot_Networks
+    <span class="o">/</span><span class="nv">Common</span><span class="o">/</span>Spyware
+    <span class="o">/</span><span class="nv">Common</span><span class="o">/</span>Malicious_Web_Sites
+    <span class="o">/</span><span class="nv">Common</span><span class="o">/</span>Adult_Content
+    <span class="o">/</span><span class="nv">Common</span><span class="o">/</span>Sex
+  <span class="k">}</span>
+
+
+  <span class="c"># CONFIGURATION</span>
+  <span class="c"># Check all requests by default</span>
+  <span class="k">set</span> static::request_check <span class="mi">1</span>
+  <span class="c"># If the category returns as blocked, return NXDOMAIN (1)</span>
+  <span class="c"># Otherwise if (0), return a statically defined IP address</span>
+  <span class="k">set</span> static::request_return_nxdomain <span class="mi">0</span>
+  <span class="k">set</span> static::request_redirect_to <span class="s2">&quot;10.1.71.21&quot;</span>
+  <span class="c"># Toggle for debug logs</span>
+  <span class="k">set</span> static::request_debug <span class="mi">1</span>
+<span class="k">}</span>
+
+
+<span class="nv">when</span> DNS_REQUEST <span class="k">{</span>
+  <span class="k">if</span> <span class="k">{</span> <span class="nv">$static::request_check</span> <span class="k">}</span> <span class="k">{</span>
+    <span class="k">set</span> lookup_category <span class="k">[</span><span class="nv">getfield</span> <span class="k">[</span><span class="nv">CATEGORY</span><span class="o">::</span>lookup <span class="s2">&quot;http://[DNS::question name]&quot;</span><span class="k">]</span> <span class="s2">&quot; &quot;</span> <span class="mi">1</span><span class="k">]</span>
+    <span class="k">if</span> <span class="k">{</span> <span class="k">[</span><span class="nb">lsearch</span> <span class="o">-</span>exact <span class="nv">$static::blocked_categories</span> <span class="nv">$lookup_category</span><span class="k">]</span> <span class="o">&gt;=</span> <span class="nv">1</span> <span class="k">}</span> <span class="k">{</span>
+      <span class="k">if</span> <span class="k">{</span> <span class="nv">$static::request_debug</span> <span class="k">}</span> <span class="k">{</span>
+         <span class="nv">log</span> local0. <span class="s2">&quot;BLOCKED: Category $lookup_category matching [DNS::question name] is filtered.&quot;</span>
+      <span class="k">}</span>
+      <span class="nv">DNS</span><span class="o">::</span>answer clear
+      <span class="k">if</span> <span class="k">{</span> <span class="nv">$static::request_return_nxdomain</span> <span class="k">}</span> <span class="k">{</span>
+         <span class="nv">DNS</span><span class="o">::</span>header opcode QUERY
+         <span class="nv">DNS</span><span class="o">::</span>header rcode NXDOMAIN
+      <span class="k">}</span> <span class="k">else</span> <span class="k">{</span>
+         <span class="k">if</span> <span class="k">{</span> <span class="k">[</span><span class="nv">DNS</span><span class="o">::</span>question type<span class="k">]</span> <span class="nv">equals</span> <span class="s2">&quot;A&quot;</span> <span class="k">}</span> <span class="k">{</span>
+            <span class="nv">DNS</span><span class="o">::</span>answer insert <span class="s2">&quot;[DNS::question name]. 111 [DNS::question class] [DNS::question type] $static::request_redirect_to&quot;</span>
+         <span class="k">}</span>
+      <span class="k">}</span>
+      <span class="nv">DNS</span><span class="o">::</span>return
+ <span class="k">}</span> <span class="k">else</span> <span class="k">{</span>
+   <span class="k">if</span> <span class="k">{</span> <span class="nv">$static::request_debug</span> <span class="k">}</span> <span class="k">{</span>
+      <span class="nv">log</span> local0. <span class="s2">&quot;Category $lookup_category matching [DNS::question name] is not filtered&quot;</span>
+      <span class="k">}</span>
+    <span class="k">}</span>
+  <span class="k">}</span>
+<span class="k">}</span>
+</pre></div>
+</div>
+<p>TMSH commands for router01.branch01 (Make sure you use text editor to copy content above and paste it)</p>
+<div class="admonition-tmsh admonition">
+<p class="first admonition-title">TMSH</p>
+<p class="last">tmsh create ltm rule DNS-query-filtering</p>
+</div>
+</div>
+
+
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="lab7.html" title="URL Categorization" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+          <a href="task2.html" title="iRule assignment" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="../../../_static/js/bootstrap.min.js"></script>
+  <script src="../../../_static/js/clouddocs.js"></script>
+  </body>
+</html>
