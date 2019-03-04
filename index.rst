@@ -1,5 +1,5 @@
 Reference Architecture
-=======================
+========================
 
 .. toctree::
    :hidden:
