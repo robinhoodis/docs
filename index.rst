@@ -7,7 +7,7 @@ Reference Architecture
    :titlesonly:
    :glob:
  
-   class1/class1.rst
+   class3/class3.rst
    class2/class2.rst
 
 .. image:: /_static/class2/agility-2018-homepage-lg.png
