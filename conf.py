@@ -21,7 +21,7 @@ import re
 import pkgutil
 import string
 sys.path.insert(0, os.path.abspath('.'))
-import f5_sphinx_theme
+#import f5_sphinx_theme
 
 year = time.strftime("%Y")
 eventname = "GSLB Build Guide %s" % (year)
@@ -157,8 +157,8 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-html_theme = 'f5_sphinx_theme'
-html_theme_path = f5_sphinx_theme.get_html_theme_path()
+#html_theme = 'f5_sphinx_theme'
+#html_theme_path = f5_sphinx_theme.get_html_theme_path()
 #html_sidebars = {'**': ['searchbox.html', 'localtoc.html', 'globaltoc.html','relations.html']}
 html_sidebars = {'**': ['localtoc.html', 'globaltoc.html']}
 html_theme_options = {
@@ -166,8 +166,8 @@ html_theme_options = {
                         'next_prev_link': True
                      }
 
-def setup(app):
-    app.add_stylesheet('css/f5_agility_theme.css')
+#def setup(app):
+#    app.add_stylesheet('css/f5_agility_theme.css')
 
 if on_rtd:
     templates_path = ['_templates']
