@@ -79,11 +79,11 @@ print "on_snops = %s" % on_snops
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-  'sphinxjp.themes.basicstrap',
-  'sphinx.ext.todo',
+#extensions = [
+#  'sphinxjp.themes.basicstrap',
+#  'sphinx.ext.todo',
 #  'sphinx.ext.autosectionlabel'
-]
+#]
 
 if 'googleanalytics_id' in locals() and len(googleanalytics_id) > 0:
   extensions += ['sphinxcontrib.googleanalytics']
